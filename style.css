@@ -14,12 +14,7 @@ body {
     100% { width: var(--finalSize); opacity: 0; }
   }
   
-  /* @keyframes fireworkPseudo {
-    0% { transform: translate(-50%, -50%); width: var(--initialSize); opacity: 1; }
-    50% { width: 0.5vmin; opacity: 1; }
-    100% { width: var(--finalSize); opacity: 0; }
-  }
-   */
+ 
   .firework,
   .firework::before,
   .firework::after
@@ -45,19 +40,14 @@ body {
     width: var(--initialSize);
     aspect-ratio: 1;
     background: 
-      /*
-      radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 0%,
-      radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 0%,
-      radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 100%,
-      radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 100%,
-      */
+     
       
       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 50% 0%,
       radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 50%,
       radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 50% 100%,
       radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 0% 50%,
       
-      /* bottom right */
+     
       radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 80% 90%,
       radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 95% 90%,
       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 90% 70%,
@@ -65,7 +55,7 @@ body {
       radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 55% 80%,
       radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 70% 77%,
       
-      /* bottom left */
+     
       radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 22% 90%,
       radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 45% 90%,
       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 33% 70%,
@@ -74,7 +64,7 @@ body {
       radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 28% 77%,
       radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 13% 72%,
       
-      /* top left */
+     
       radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 80% 10%,
       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 95% 14%,
       radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 90% 23%,
@@ -83,7 +73,7 @@ body {
       radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 77% 37%,
       radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 60% 7%,
       
-      /* top right */
+     
       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 22% 14%,
       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 45% 20%,
       radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 33% 34%,
@@ -100,18 +90,18 @@ body {
     --x: -50%;
     --y: -50%;
     --initialY: -50%;
-  /*   transform: translate(-20vmin, -2vmin) rotate(40deg) scale(1.3) rotateY(40deg); */
+ 
     transform: translate(-50%, -50%) rotate(40deg) scale(1.3) rotateY(40deg);
-  /*   animation: fireworkPseudo 2s infinite; */
+ 
   }
   
   .firework::after {
     --x: -50%;
     --y: -50%;
     --initialY: -50%;
-  /*   transform: translate(44vmin, -50%) rotate(170deg) scale(1.15) rotateY(-30deg); */
+ 
     transform: translate(-50%, -50%) rotate(170deg) scale(1.15) rotateY(-30deg);
-  /*   animation: fireworkPseudo 2s infinite; */
+ 
   }
   
   .firework:nth-child(2) {
@@ -153,6 +143,46 @@ body {
     animation-delay: -0.4s;
   }
 
+
+#redir1{
+    margin: 0px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 20;
+    font-style: normal;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    text-align: left;
+  }
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+ 
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+ 
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+ 
+  .topnav a.active {
+    background-color: black;
+    color: white;
+  }
+
 body{
     background-color: black;
     min-height: 100vh;
@@ -163,7 +193,7 @@ body{
 .intro{
     margin: auto;
     text-align: center;
-    width: 600px;
+    width: 700px;
     scroll-behavior: smooth;
     height: 1080px;
     border-radius: 50px;
@@ -177,8 +207,8 @@ body{
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 20;
-    font-style: normal;
-    padding-top: 16px;
+    padding-top: 10px;
+    font-size: 40px;
     padding-bottom: 0px;
     text-align: left;
     
@@ -191,7 +221,7 @@ body{
     font-optical-sizing: auto;
     font-weight: 20;
     font-style: normal;
-    padding-top: 80px;
+    padding-top: 30px;
     padding-bottom: 0px;
     text-align: left;
     
@@ -271,14 +301,14 @@ body{
     border: 2px;
     margin: auto;
     text-align: center;
-    width: 800px;
+    width: 700px;
     scroll-behavior: auto;
     height: 600px;
     border-radius: 10px;
     flex: display;
     border: 2px ridge grey; 
     text-align: center; 
-    max-width: 600px; 
+     
     
     
 }
@@ -302,6 +332,15 @@ body{
 }
 
 #aboutme{
+    color: white;
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    padding-left: 25px;
+    text-align: left;
+}
+
+#featured{
     color: white;
     font-family: "Geist", sans-serif;
     font-optical-sizing: auto;
@@ -420,3 +459,88 @@ body{
 }
 
 
+#khronosbox{
+    border: 2px;
+    margin: auto;
+    text-align: center;
+    width: 700px;
+    scroll-behavior: auto;
+    height: 250px;
+    border-radius: 10px;
+    flex: display;
+    border: 2px ridge grey; 
+    text-align: center; 
+
+    float: left;
+}
+
+#prvictbox{
+    border: 2px;
+    margin: auto;
+    text-align: center;
+    width: 30s0px;
+    scroll-behavior: auto;
+    height: 250px;
+    border-radius: 10px;
+    flex: display;
+    border: 2px ridge grey; 
+    text-align: center; 
+    max-width: 600px; 
+    float: right;
+}
+#khimage{
+    padding-top: 35px;
+    float: left;
+}
+
+#khimage1{
+    padding-top: 45px;
+    float: right;
+}
+
+#khtitle{
+    margin-top: 0px;
+    color: white;
+    padding-top: 50px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+#khtitle1{
+    margin-top: 0px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+#khtitle2{
+    margin-top: 0px;
+    color: white;
+    padding-top: 50px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+#khtitle3{
+    margin-top: 0px;
+    color: white;
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    padding-bottom: 0px;
+    text-align: center;
+}
